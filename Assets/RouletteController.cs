@@ -6,7 +6,6 @@ public class RouletteController : MonoBehaviour
 
     private void Start()
     {
-        print("Hello, World!");
     }
     // Start is called before the first frame update
 
