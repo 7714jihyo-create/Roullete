@@ -1,14 +1,14 @@
 # 🎡 Roulette Game (룰렛 회전 게임)
 
-**Roulette Game**은 유니티 엔진을 활용하여 제작한 2D 물리 시뮬레이션 게임입니다. 마우스 클릭을 통해 룰렛을 회전시키고, 마찰력을 구현하여 자연스럽게 멈추는 로직을 학습하기 위해 제작되었습니다.
+**Roulette Game**은 유니티 엔진(2022.3.62f3)을 활용하여 제작한 2D 게임입니다.
+마우스 클릭을 통해 룰렛을 회전시키고, 마찰력을 구현하여 자연스럽게 멈추는 로직을 학습하기 위해 제작되었습니다.
 
 ---
 
 ## 🛠 개발 환경 (Environment)
-*   **Unity Version:** 2022.3.x 이상 (추천)
+*   **Unity Version:** 2022.3.62f3
 *   **Language:** C#
-*   **Platform:** PC
-*   **Physics:** Transform-based Rotation
+*   **Platform:** PC (Windows)
 
 ---
 
@@ -62,7 +62,7 @@ public class RouletteController : MonoBehaviour
         // 룰렛 회전 실행
         transform.Rotate(0, 0, this.rotSpeed);
 
-        // 속도 감소 (마찰력 구현)
+        // 속도 감소
         this.rotSpeed *= 0.96f;
     }
 }
